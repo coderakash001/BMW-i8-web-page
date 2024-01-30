@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "montr";
+    src: url(Montserrat-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montr";
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #e8e8e8;
+    overflow: hidden;
+}
+.bar{
+    width: 24%;
+    height: 100%;
+    background-color: #197B9F;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.53), rgba(0, 0, 0, 0.315), transparent,transparent, rgba(0, 0, 0, 0.196) );
+    position: absolute;
+    right: 17%;
+    top: 0;
+    z-index: 1;
+    animation: bar 1s 1 both ease;
+}
+@keyframes bar {
+    0%{
+       height: 0;  
+    }100%{
+        height: 100%;
+    }
+}
+nav{
+    width: 100%;
+    height: 13%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 50px;
+}
+nav > .left{
+    display: flex;
+}
+nav > .left > img{
+    height: 610%;
+    position: relative;
+    bottom: 28px;
+    animation: logo 1s both ease;
+}
+@keyframes logo {
+    100%{
+        rotate: 360deg;
+    }
+}
+nav > .left > a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-left: 80px;
+    font-weight: 600;
+    position: relative;
+}
+nav > .left > a::before{
+    content: "";
+    width: 0%;
+    height: 1.5px;
+    background-color: #197B9F;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: .5s ease;
+}
+nav > .left > a:hover::before{
+    width: 100%;
+}
+nav > .right{
+    display: flex;
+}
+nav > .right > h3{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+}
+nav > .right > svg{
+    height: 110%;
+    margin-left: 40px;
+}
+
+.landing-page{
+    width: 100%;
+    height: 87%;
+    /* background-color: chartreuse; */
+    display: flex;
+
+}
+.landing-page > .left{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(0, 191, 255); */
+    padding: 10% 3%;
+    padding-right: 8%;
+}
+.landing-page > .left > h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: start;
+}
+.landing-page > .left > h2{
+    font-size: 16px;
+    margin-top: 120px;
+    text-align: start;
+}
+.landing-page > .left > p{
+    font-size: 16px;
+    text-align: start;
+    font-weight: 600;
+}
+.landing-page > .right{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(255, 0, 195); */
+}
+.bmw{
+    height: 74%;
+    position: absolute;
+    right: 0%;
+    top: 180px;
+    z-index: 2;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.852));
+    animation: bmw 1.2s .8s 1 both ease;
+}
+@keyframes bmw {
+    0%{
+       opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+.colors{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+    height: 4%;
+    position: absolute;
+    left: 3%;
+    bottom: 24%;
+}
+
+.blue{
+    width: 20%;
+    height: 100%;
+    background-color: #197B9F;
+}
+.black{
+    width: 20%;
+    height: 100%;
+    background-color: #000;
+}
+.brown{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(141, 88, 62);
+}
+.red{
+    width: 20%;
+    height: 100%;
+    background-color: red;
+}
+.arrowl{
+    height: 6%;
+    position: absolute;
+    right: 12%;
+    bottom: 5%;
+}
+.arrowr{
+    height: 6%;
+    position: absolute;
+    right: 6%;
+    bottom: 5%;
+}
